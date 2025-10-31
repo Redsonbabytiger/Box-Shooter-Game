@@ -141,11 +141,19 @@ def main():
         dx = dy = 0
         if keys[pygame.K_LEFT]:
             dx -= WHITE_SPEED
+        elif keys[pygame.K_a]:
+            dx -= WHITE_SPEED
         if keys[pygame.K_RIGHT]:
+            dx += WHITE_SPEED
+        elif keys[pygame.K_d]:
             dx += WHITE_SPEED
         if keys[pygame.K_UP]:
             dy -= WHITE_SPEED
+        elif keys[pygame.K_w]:
+            dy -= WHITE_SPEED
         if keys[pygame.K_DOWN]:
+            dy += WHITE_SPEED
+        elif keys[pygame.K_s]:
             dy += WHITE_SPEED
         player.move(dx, dy)
 
